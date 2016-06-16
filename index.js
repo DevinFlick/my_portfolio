@@ -12,8 +12,8 @@ server.get('/', function(request, response){
 server.get('/about', function(request, response){
   response.sendFile('public/html/about.html', {root: __dirname});
 });
-server.get('contact', function(request, response){
-  response.sendFile('public/html/contact', {root: __dirname});
+server.get('/contact', function(request, response){
+  response.sendFile('public/html/contact.html', {root: __dirname});
 });
 
 server.post('/contact', function(request, response){
